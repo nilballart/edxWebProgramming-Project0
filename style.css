@@ -1,0 +1,59 @@
+body {
+    font-family: helvetica, Arial, sans-serif;
+}
+
+form {
+    align-content: center;
+    text-align: center;
+}
+
+form > div {
+    margin: auto;
+    width: 50%;
+    align-self: center;
+}
+
+form > div > input {
+    display: block;
+    margin: 15px;
+}
+
+.search-bar {
+    width: 25%;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 25px;
+    margin: 20px auto;
+    background: url(src/search-bar-img.png) no-repeat 3px 1px;
+    background-size: contain;
+    border: 2px solid black;
+    transition: all 0.5s;
+}
+
+.search-bar:focus {
+    width: 50%;
+    border-bottom: 5px solid gray;
+}
+
+
+.search-button, .lucky-button {
+    font-size: large;
+    padding: 5px;
+    width: 180px;
+    border-radius: 5px;
+    margin: 5px 10px;
+    transition: all 0.2s
+}
+
+.search-button:hover, .lucky-button:hover {
+    background-color: darkgray;
+}
+
+.search-logo {
+    width: 50%;
+}
+
+.container {
+    text-align: center;
+}
+
