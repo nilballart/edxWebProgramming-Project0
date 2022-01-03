@@ -8,15 +8,23 @@
         <div class="nav">
             <a href="index.html">Go Back</a>
         </div>
-        <div class="container">
-            <label for="advanced-search">ADVANCED SEARCH</label>
-            <form action="https://google.com/search">
+        <div class="container" id="advanced-container">
+            <img class="search-logo" id="advanced-logo" src="src/advanced-logo.png" alt="Advanced logo">
+            <form action="https://google.com/search" name="f">
+                <label for="field1">All these words:</label>
+                <input type="text" class="advanced-bar" id="field1" value=""  name="as_q">
+                <br>
+                <label for="field2">This exact word or phrase: </label>
+                <input type="text" class="advanced-bar" id="field2" value=""  name="as_epq">
+                <br>
+                <label for="field3">Any of this words: </label>
+                <input type="text" class="advanced-bar" id="field3" value=""  name="as_oq">
+                <br>
+                <label for="field4">None of these words: </label>
+                <input type="text" class="advanced-bar" id="field4" value=""  name="as_eq">
+                <br>
                 <div>
-                    <input class="search-bar" type="text" name="q">
-                    <div>
-                        <input class="search-button" name="btnK" type="submit" value="Search">
-                        <input class="lucky-button" name="btnI" type="submit" value="I feel lucky" formaction="https://google.com/search?&btnI=1">
-                    </div>
+                    <input class="search-button" id="advanced-button" type="submit" value="Search">
                 </div>
             </form>
         </div>
